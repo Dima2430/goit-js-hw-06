@@ -13,7 +13,7 @@ class Storage {
   removeItem(itemToRemove) {
     const toRemove = this.#items.indexOf(itemToRemove);
     if (toRemove !== -1) {
-       this.#items.splice(toRemove);
+       this.#items.splice(toRemove,1);
     }
   }
 }
